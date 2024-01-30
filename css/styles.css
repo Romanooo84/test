@@ -1,3 +1,17 @@
 .body{
-    
+ background-color: black;  
+ display: flex;
+ flex-direction: column;
+ font-family: tourney;
+}
+
+h3{
+    color: rgb(125, 225, 225);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    font-family: Dancing Script;
 }

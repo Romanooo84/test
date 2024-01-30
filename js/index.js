@@ -23,36 +23,39 @@ jQuery(document).ready(function () {
     thumbnailWidth: "auto",
     thumbnailHeight: 300,
     itemsBaseURL: "/photos",
-    galleryDisplayMode: 'pagination',
-    galleryMaxRows: 3, 
+    galleryDisplayMode: 'fullContent',
+    galleryPaginationMode: 'dots',
+    galleryL1MaxRows: 2, 
     gallerySorting: 'random',
-    thumbnailAlignment: 'fillWidth',
-          thumbnailL1GutterWidth: 20,
-          thumbnailL1GutterHeight: 20,
-          thumbnailBorderHorizontal: 1,
-          thumbnailBorderVertical: 1,
+    thumbnailAlignment: 'justified',
+          thumbnailL1GutterWidth: 30,
+          thumbnailL1GutterHeight: 30,
+          thumbnailBorderHorizontal: 3,
+          thumbnailBorderVertical: 3,
 
           // THUMBNAIL TOOLS & LABEL
           thumbnailL1Label: { display: true, position:'overImageOnTop', hideIcons: true, titleFontSize: '1.5em', align: 'left'},
           thumbnailToolbarImage :  { topLeft: 'select', bottomRight : 'featured,display,download,info,cart' },
 
           // DISPLAY ANIMATION
-          thumbnailDisplayTransition: 'flipUp',       // thumbnail display animation
-          thumbnailDisplayTransitionDuration: 400,
+          thumbnailDisplayTransition: 'slideDown2',       // thumbnail display animation
+          thumbnailDisplayTransitionDuration: 3000,
           thumbnailDisplayInterval: 200,
-          thumbnailDisplayOrder: 'rowByRow',
+          
 
           // THUMBNAIL'S HOVER ANIMATION
-          thumbnailHoverEffect2: 'toolsSlideUp|labelSlideDown',
+          thumbnailHoverEffect2: 'toolsSlideUp|labelSlideDown|scale120',
           touchAnimation: true,
-          touchAutoOpenDelay: -1,
+          touchAutoOpenDelay: 0,
 
           // GALLERY THEME
           galleryTheme : { 
-            thumbnail: { titleShadow : 'none', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#fff' },
+            thumbnail: { titleShadow : 'none', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#000',background: '#000', },
             navigationPagination :  { background: '#3C4B5B', color: '#fff', colorHover: '#aaa', borderRadius: '4px' },
-          },
-        
+    },
+          //Lightbox general settings
+          imageTransition: 'sslideAppear',
+          slideshowDelay: 3000,
           
           // DEEP LINKING
           locationHash: false
